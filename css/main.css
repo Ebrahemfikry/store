@@ -1,0 +1,1481 @@
+:root{
+    --black-color: #222;
+    --ora-color: rgb(242, 87, 9);
+    --blue-color: #0070dc;
+    --white-color: #fff;
+    --ye-color: #fbfe56;
+}
+*{
+    transition: all .5s;
+}
+body{
+    scroll-behavior: smooth;
+    font-family: 'Anuphan', sans-serif;
+}
+.flex{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+main{
+    padding: 0 40px;
+}
+.head-600{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+    padding: 0 20px;
+}
+.head-600 h1{
+    display: inline
+}
+.head-600 h1 i{
+    color: var(--ora-color);
+}
+.head-600 h1{
+    font-size: 35px;
+}
+.head-600 a{
+    display: inline-block;
+}
+/* start header ################ */
+/* start one ################## */
+.one ul{
+    list-style: none;
+    padding: 10px 0 ;
+    margin: 0;
+}
+.one ul li{
+    margin: 10px 5px;
+}
+.one ul li a{
+    margin: 15px 15px 15px 0;
+    text-decoration: none;
+    color: var(--black-color);
+}
+/* end one ################## */
+/* start two ################## */
+.two .logo h1 i{
+    color: var(--ora-color);
+}
+.two .logo h1{
+    font-size: 35px;
+}
+.two form fieldset{
+    border: 1px solid #a7a7a7;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.two form fieldset select,
+.two form fieldset input,
+.two form fieldset button{
+    padding: 15px ;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+.two form fieldset select{
+    border-right: 1px solid #cbcbcb;
+    width: 100px;
+}
+.two form fieldset input{
+    width: 400px;
+    
+}
+.two form fieldset button{
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    width: 120px;
+}
+.two ul{
+    list-style: none;
+    padding: 10px 0 ;
+    margin: 0;
+}
+.two ul li{
+    margin: 10px;
+    font-size: 20px;
+}
+.two ul li i{
+    font-size: 25px;
+}
+.two ul li a{
+    margin: 15px 15px 15px 0;
+    text-decoration: none;
+    color: var(--black-color);
+}
+.bi-love{
+    position: relative;
+}
+.bi-love::after{
+    content: "0";
+    position: absolute;
+    font-size: 15px;
+    background-color: var(--ye-color);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: var(--black-color);
+    left: 20px;
+    top: -10px;
+    text-align: center;
+}
+.bi-cart{
+    position: relative;
+}
+.bi-cart::after{
+    content: "0";
+    position: absolute;
+    font-size: 15px;
+    background-color: var(--ye-color);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: var(--black-color);
+    left: 20px;
+    top: -10px;
+    text-align: center;
+}
+@media only screen and (max-width: 1200px) {
+    .two form fieldset input{
+        width: 400px;
+    }
+    .two form fieldset button{
+        background-color: var(--blue-color);
+        color: var(--white-color);
+        width: 120px;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    .two form fieldset input{
+        width: 600px;
+        
+    }
+    .two form fieldset button{
+        background-color: var(--blue-color);
+        color: var(--white-color);
+        width: 150px;
+    }
+}
+/* end two ################## */
+/* start three ################## */
+.three ul{
+    list-style: none;
+    padding: 10px 0 ;
+    margin: 0;
+}
+.three ul li{
+    margin: 10px;
+    font-size: 20px;
+}
+.three ul li i{
+    font-size: 20px;
+}
+.three ul li a{
+    margin: 15px 15px 15px 0;
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.three .li-aside i{
+    font-size: 20px;
+    margin: 0 20px;
+}
+/* end three ################## */
+/* end header ################ */
+@media only screen and (max-width: 600px) {
+    .one,
+    .two,
+    .three,
+    .big-box aside ul{
+        display: none;
+    }
+    .head-600{
+        display: flex;
+    }
+}
+
+/* start big-box ###################### */
+/* start big-box aside ###################### */
+@media only screen and (max-width: 600px) {
+    .big-box aside{
+        width: 100%;
+    }
+}
+.big-box aside{
+    width: 25%;
+}
+.big-box aside ul{
+    list-style: none;
+    padding: 0 ;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.big-box aside ul li{
+    margin: 5px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 20px;
+    padding: 5px 20px;
+    position: relative;
+    cursor: pointer;
+}
+.big-box aside ul li i{
+    font-size: 20px;
+    margin: 0 10px;
+}
+.bi-chevron-right{
+    position: absolute;
+    right: 10px;
+}
+.big-box aside ul li a{
+    text-decoration: none;
+    color: var(--black-color);
+}
+/* end big-box aside ###################### */
+/* end big-box ###################### */
+.offcanvas ul{
+    list-style: none;
+    padding: 0 ;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.offcanvas ul li{
+    margin: 5px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 20px;
+    padding: 5px 20px;
+    position: relative;
+    cursor: pointer;
+}
+.offcanvas ul li i{
+    font-size: 20px;
+    margin: 0 10px;
+}
+.bi-chevron-right{
+    position: absolute;
+    right: 10px;
+}
+.offcanvas ul li a{
+    text-decoration: none;
+    color: var(--black-color);
+}
+.offcanvas .logo h1 i{
+    color: var(--ora-color);
+}
+.offcanvas .logo h1{
+    font-size: 35px;
+}
+/* start big-box ###################### */
+/* start big-box section ###################### */
+.big-box section{
+    width: 75%;
+    padding: 30px;
+}
+@media only screen and (max-width: 600px) {
+    .main{
+        padding: 0;
+        overflow: hidden;
+    }
+    .big-box aside {
+        width: 100%;
+    }
+    .big-box section{
+        width: 100%;
+        padding: 0;
+    }
+    .container-fluid{
+        --bs-gutter-x: 0rem;
+    }
+}
+/* start landing ############## */
+.landing{
+    padding: 0px 30px;
+    height: 400px;
+    overflow: hidden;
+}
+.carousel-caption {
+    position: absolute;
+    right: 0%;
+    bottom: 140px;
+    left: 10%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: rgb(255, 255, 255);
+    text-align: left;
+}
+.carousel-caption span{
+    background-color: var(--ye-color);
+    color: var(--black-color);
+    padding: 9px;
+    border-radius: 9px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.carousel-caption h3{
+    color: var(--black-color);
+    font-size: 50px;
+    font-weight: normal;
+}
+.carousel-caption h3 span{
+    font-weight: bold;
+    color: var(--black-color);
+    font-size: 60px;
+    display: inline;
+    background-color: transparent;
+    padding: 0;
+}
+.carousel-caption p{
+    font-size: 20px;
+    color: var(--black-color);
+}
+.carousel-caption p span{
+    font-weight: bold;
+    color: #f00;
+    font-size: 40px;
+    background-color: transparent;
+}
+.carousel-caption button{
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    outline: none;
+    border: 0;
+}
+@media only screen and (max-width: 600px) {
+    .landing{
+        padding: 0px;
+        margin: 20px 0;
+        height: 250px;
+        overflow: hidden;
+    }
+    .carousel-caption {
+        position: absolute;
+        right: 0%;
+        bottom: 50px;
+        left: 10%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .carousel-caption span{
+        padding: 5px;
+        border-radius: 9px;
+        margin-bottom: 0px;
+    }
+    .carousel-caption h3{
+        font-size: 16px;
+        font-weight: normal;
+        margin: 10px 0 0 0 ;
+    }
+    .carousel-caption h3 span{
+        font-size: 20px;
+    }
+    .carousel-caption p{
+        font-size: 18px;
+        margin: 0;
+    }
+    .carousel-caption p span{
+        font-size: 20px;
+        margin: 0;
+    }
+    .carousel-caption button{
+        font-size: 16px;
+        padding: 5px;
+    }
+    .carousel-indicators {
+        bottom: -67px;
+    }
+}
+
+/* @media only screen and (min-width: 1400px) {
+    .carousel-caption {
+        bottom: 300px;
+    }
+    .carousel-indicators {
+        bottom: 200px;
+    }
+} */
+/* end landing ############## */
+/* end big-box section ###################### */
+/* end big-box ###################### */
+
+/* start company  link ################### */
+.section-link img{
+    width: 200px;
+    height: 100px;
+    margin: 50px 0 0 0;
+    padding: 0;
+    opacity: .3;
+    transition: all .5s;
+}
+.section-link img:hover{
+    opacity: 1;
+}
+@media only screen and (max-width: 600px) {
+    .section-link.flex{
+        flex-direction: row;
+        padding: 20px;
+    }
+    .section-link img{
+        width: 40%;
+    }
+}
+/* end company link ####################### */
+
+/* section-info ############################# */
+.section-info{
+    overflow: hidden;
+    margin: 50px 0;
+}
+.section-info .flex{
+    justify-content: space-evenly;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+}
+.section-info .box .icon i{
+    font-size: 30px;
+}
+.section-info .box h4{
+    font-size: 20px;
+}
+.section-info .box p{
+    font-size: 18px;
+    color: #888;;
+}
+
+/* section new phone ############# */
+.section-new-phone{
+    border: 1px solid #ddd;
+    padding: 20px;
+    position: relative;
+    height: 550px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.section-new-phone span{
+    color: rgb(0, 0, 255);
+    font-size: 18px;
+    margin: 10px 0;
+    display: block;
+}
+.section-new-phone h2{
+    font-size: 35px;
+    font-weight: bold;
+}
+.section-new-phone p{
+    font-size: 16px;
+}
+.button{
+    font-size: 18px;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    width: 100px;
+    padding: 10px 0;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+}
+.section-new-phone img{
+    width: 500px;
+    position: absolute;
+    bottom: -210px;
+    left: -50px;
+}
+
+
+/* section-headphone ################## */
+.section-headphone{
+    margin: 20px 0;
+}
+.section-headphone a{
+    border: 1px solid #ddd;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+.section-headphone a .box img{
+    width: 100%;
+}
+.section-headphone a .box h4{
+    color: var(--black-color);
+    font-size: 20px;
+}
+.section-headphone a .rate i{
+    color: #cbce02;
+}
+.section-headphone a .price span{
+    opacity: .3;
+}
+.section-headphone a .price p{
+    color: #f00;
+    font-size: 18px;
+}
+.section-headphone a .price i{
+    font-size: 25px;
+}
+.love{
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 7px 10px;
+}
+
+
+
+
+/* start head phone */
+.p{
+    font-size: 25px;
+}
+
+
+
+
+
+
+.section-weekend-discount{
+    margin: 50px 0;
+}
+.section-weekend-discount a{
+    width: 48%;
+    border: 1px solid #ddd;
+    background-color: #fefefe;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+}
+.section-weekend-discount a .box{
+    position: relative;
+}
+.section-weekend-discount a .box img{
+    position: absolute;
+    width: 300px;
+    right: -180px;
+    bottom: -140px;
+}
+.section-weekend-discount a .box h3{
+    color: var(--black-color);
+    font-size: 30px;
+    margin-top: 10px;
+}
+.section-weekend-discount a .box p{
+    color: var(--black-color);
+    font-size: 18px;
+    margin-top: 10px;
+}
+@media only screen and (max-width: 600px) {
+    .section-weekend-discount a{
+        width: 100%;
+    }
+    .section-weekend-discount a .box img{
+        width: 250px;
+    }
+}
+
+
+/* best-saller ################# */
+.best-saller{
+    margin: 30px 0 0 0;
+}
+.best-saller a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+/* section-bestsaller-product ########################## */
+.section-bestsaller-product{
+    margin-top: 40px;
+}
+.section-bestsaller-product a{
+    width: 24%;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    padding: 20px;
+    transition: all .5s;
+    overflow: hidden;
+    background-color: #f4f4f4;
+}
+.section-bestsaller-product .box img{
+    width: 100%;
+    transition: all .5s;
+}
+.section-bestsaller-product .box:hover{
+    transform: scale(1.1)
+}
+.section-bestsaller-product .box h4{
+    font-size: 15px;
+}
+.section-bestsaller-product .box span{
+    opacity: .3;
+}
+.section-bestsaller-product .box p{
+    font-size: 20px;
+    color: green;
+}
+.section-bestsaller-product .box i{
+    font-size: 30px;
+    color: 000;
+}
+.section-bestsaller-product .box .rate i{
+    font-size: 20px;
+    color: #cbce02;
+}
+
+@media only screen and (max-width: 600px) {
+    .section-bestsaller-product a{
+        width: 100%;
+    }
+}
+
+
+
+
+/* momentum ########### */
+.momentum{
+    border: 1px solid #ddd;
+    width: 100%;
+    margin: 50px 0;
+    background-color: #ebebeb;
+}
+.momentum .box{
+    width: 50%;
+    position: relative;
+    /* overflow: hidden; */
+}
+a{
+    text-decoration: none;
+}
+.momentum .box-info{
+    padding: 20px;
+}
+.momentum span{
+    color: rgb(0, 0, 255);
+    font-size: 18px;
+    margin: 10px 0;
+    display: block;
+}
+.momentum h2{
+    font-size: 25px;
+    font-weight: bold;
+}
+.momentum p{
+    font-size: 16px;
+}
+.momentum .box img{
+    width: 70%;
+    margin-left: 100px;
+}
+@media only screen and (max-width: 600px) {
+    .momentum .box{
+        width: 100%;
+    }
+    .momentum .box img {
+        width: 70%;
+        margin-left: 50px;
+    }
+}
+
+
+
+
+/* Latest Deals #################### */
+
+.dragon{
+    margin: 50px 0;
+    position: relative;
+}
+.dragon a{
+    width: 49%;
+    border: 1px solid #ddd;
+    padding: 20px;
+    position: relative;
+    text-decoration: none;
+}
+.dragon .box img{
+    width: 30%;
+    position: relative;
+}
+.dragon .box .div{
+    position: absolute;
+    background-color: red;
+    color: var(--white-color);
+    text-align: center;
+    width: 50px;
+    height: 30px;
+    border-radius: 40%;
+    top: 35px;
+    right: 350px;
+}
+.dragon .box h4{
+    font-size: 20px;
+    color: #222;
+}
+.dragon .box h5{
+    color: red;
+}
+.dragon .box .rate{
+    justify-content: flex-start;
+}
+.dragon .box .rate i{
+    margin: 0 2px 5px;
+    font-size: 20px;
+    color: #cbce02;
+}
+@media only screen and (max-width: 600px) {
+    .dragon a{
+        width: 100%;
+        margin: 20px 0;
+    }
+    .dragon .box .div {
+        right: 200px;
+    }
+    .dragon .box .flex{
+        flex-direction: row;
+    }
+}
+/* dragone ############################# */
+
+
+
+footer{
+    margin: 50px 0 0 0;
+    background-color: #ebebeb;
+    padding: 30px;
+}
+footer h3{
+    font-size: 25px;
+}
+footer .box{
+    width: 250px;
+    height: 250px;
+}
+footer .box a{
+    text-decoration: none;
+    display: block;
+    color: #777;
+    margin: 10px 0;
+}
+.footer-copy{
+    background-color: #222;
+    color: var(--white-color);
+    width: 100%;
+    text-align: center;
+    padding: 9px;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .flex{
+        flex-direction: column;
+    }
+    footer .box{
+        width: 100%;
+        margin: 30px 0;
+    }
+    .footer-copy{
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .one,
+    .two,
+    .three,
+    .big-box aside ul{
+        display: none;
+    }
+    .head-600{
+        display: flex;
+    }
+
+    .big-box aside{
+        width: 100%;
+    }
+
+    .main{
+        padding: 0;
+        overflow: hidden;
+    }
+    .big-box aside {
+        width: 100%;
+    }
+    .big-box section{
+        width: 100%;
+        padding: 0;
+    }
+    .container-fluid{
+        --bs-gutter-x: 0rem;
+    }
+
+    .landing{
+        padding: 0px;
+        margin: 20px 0;
+        height: 250px;
+        overflow: hidden;
+    }
+    .carousel-caption {
+        position: absolute;
+        right: 0%;
+        bottom: 200px;
+        left: 10%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .carousel-caption span{
+        padding: 5px;
+        border-radius: 9px;
+        margin-bottom: 0px;
+    }
+    .carousel-caption h3{
+        font-size: 16px;
+        font-weight: normal;
+        margin: 10px 0 0 0 ;
+    }
+    .carousel-caption h3 span{
+        font-size: 20px;
+    }
+    .carousel-caption p{
+        font-size: 18px;
+        margin: 0;
+    }
+    .carousel-caption p span{
+        font-size: 20px;
+        margin: 0;
+    }
+    .carousel-caption button{
+        font-size: 16px;
+        padding: 5px;
+    }
+    .carousel-indicators {
+        bottom: 90px;
+    }
+
+    .section-link.flex{
+        flex-direction: row;
+        padding: 20px;
+    }
+    .section-link img{
+        width: 40%;
+    }
+
+    .section-weekend-discount a{
+        width: 100%;
+    }
+    .section-weekend-discount a .box img{
+        width: 250px;
+    }
+
+    .section-bestsaller-product a{
+        width: 100%;
+    }
+
+    .momentum .box{
+        width: 100%;
+    }
+    .momentum .box img {
+        width: 70%;
+        margin-left: 50px;
+    }
+
+    .dragon a{
+        width: 100%;
+        margin: 20px 0;
+    }
+    .dragon .box .div {
+        right: 200px;
+    }
+    .dragon .box .flex{
+        flex-direction: row;
+    }
+
+    .flex{
+        flex-direction: column;
+    }
+    footer .box{
+        width: 100%;
+        margin: 30px 0;
+    }
+    .footer-copy{
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
+
+@media only screen and (min-width: 767px) {
+    .one,
+    .two,
+    .three,
+    .big-box aside ul{
+        display: none;
+    }
+    .head-600{
+        display: flex;
+    }
+
+    .big-box aside{
+        width: 100%;
+    }
+
+    .main{
+        padding: 0;
+        overflow: hidden;
+    }
+    .big-box aside {
+        width: 100%;
+    }
+    .big-box section{
+        width: 100%;
+        padding: 0;
+    }
+    .container-fluid{
+        --bs-gutter-x: 0rem;
+    }
+
+    .landing{
+        padding: 0px;
+        margin: 20px 0;
+        height: 250px;
+        overflow: hidden;
+    }
+    .carousel-caption {
+        position: absolute;
+        right: 0%;
+        bottom: 305px;
+        left: 10%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .carousel-caption span{
+        padding: 5px;
+        border-radius: 9px;
+        margin-bottom: 0px;
+    }
+    .carousel-caption h3{
+        font-size: 16px;
+        font-weight: normal;
+        margin: 10px 0 0 0 ;
+    }
+    .carousel-caption h3 span{
+        font-size: 20px;
+    }
+    .carousel-caption p{
+        font-size: 18px;
+        margin: 0;
+    }
+    .carousel-caption p span{
+        font-size: 20px;
+        margin: 0;
+    }
+    .carousel-caption button{
+        font-size: 16px;
+        padding: 5px;
+    }
+    .carousel-indicators {
+        bottom: 200px;
+    }
+
+    .section-link.flex{
+        flex-direction: row;
+        padding: 20px;
+    }
+    .section-link img{
+        width: 40%;
+    }
+
+    .section-weekend-discount a{
+        width: 100%;
+    }
+    .section-weekend-discount a .box img{
+        width: 350px;
+    }
+
+    .section-bestsaller-product a{
+        width: 100%;
+    }
+
+    .momentum .box{
+        width: 100%;
+    }
+    .momentum .box img {
+        width: 70%;
+        margin-left: 50px;
+    }
+
+    .dragon a{
+        width: 100%;
+        margin: 20px 0;
+    }
+    .dragon .box .div {
+        right: 290px;
+    }
+    .dragon .box .flex{
+        flex-direction: row;
+    }
+
+    .flex{
+        flex-direction: column;
+    }
+    footer .box{
+        width: 100%;
+        margin: 30px 0;
+    }
+    .footer-copy{
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .head-600 {
+        display: none;
+    }
+    .one,
+    .two,
+    .three{
+        display: flex;
+    }
+    .big-box aside ul{
+        display: block;
+    }
+    main{
+        padding: 0 30px;
+        overflow: hidden;
+    }
+    .big-box aside {
+        width: 25%;
+    }
+    .big-box section{
+        width: 75%;
+        padding: 20px;
+    }
+    .container-fluid{
+        --bs-gutter-x: 1.5rem;
+    }
+
+    .landing{
+        padding: 0 30px;
+        margin: 20px 0;
+        height: 500px;
+        overflow: hidden;
+    }
+    .carousel-caption {
+        position: absolute;
+        right: 0%;
+        bottom: 180px;
+        left: 10%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .carousel-caption span{
+        padding: 10px;
+        border-radius: 9px;
+        margin-bottom: 20px;
+    }
+    .carousel-caption h3{
+        font-size: 40px;
+        font-weight: normal;
+        margin: 10px 0 0 0 ;
+    }
+    .carousel-caption h3 span{
+        font-size: 60px;
+    }
+    .carousel-caption p{
+        font-size: 30px;
+        margin: 0;
+    }
+    .carousel-caption p span{
+        font-size: 50px;
+        margin: 0;
+    }
+    .carousel-caption button{
+        font-size: 20px;
+        padding: 15px;
+    }
+    .carousel-indicators {
+        bottom: 50px;
+    }
+
+    .section-link.flex{
+        flex-direction: row;
+
+        padding: 20px;
+    }
+    .section-link img{
+        width: 150px;
+    }
+
+    .section-weekend-discount a{
+        width: 48%;
+    }
+    .section-weekend-discount a .box img{
+        width: 200px;
+        right: -122px;
+        bottom: -140px
+    }
+
+    .section-bestsaller-product a{
+        width: 24%;
+    }
+
+    .section-new-phone img {
+        bottom: -243px;
+    }
+    .love {
+        right: 10px;
+        top: 30px;
+    }
+    .momentum .box{
+        width: 50%;
+    }
+    .momentum .box img {
+        width: 70%;
+        margin-left: 50px;
+    }
+
+    .dragon a{
+        width: 47%;
+        margin: 20px 0;
+    }
+    .dragon .box .div {
+        right: 190px;
+    }
+    .dragon .box .flex{
+        flex-direction: row;
+    }
+
+    .flex{
+        flex-direction: row;
+        flex-flow: row wrap;
+    }
+    footer .box{
+        width: 200px;
+        height: 300px;
+
+    }
+    .footer-copy{
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .carousel-caption {
+        bottom: 200px;
+    }
+    .carousel-indicators {
+        bottom: 60px;
+    }
+    .dragon .box .div {
+        right: 300px;
+    }
+}
+@media only screen and (min-width: 1300px){
+    .carousel-caption {
+        bottom: 220px;
+    }
+    .carousel-indicators {
+        bottom: 60px;
+    }
+    .dragon .box .div {
+        right: 300px;
+    }
+}
+@media only screen and (min-width: 1919px){
+    .carousel-caption {
+        bottom: 450px;
+    }
+    .carousel-indicators {
+        bottom: 320px;
+    }
+    .dragon .box .div {
+        right: 300px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .offcanvas ul{
+        z-index: 1 !important;
+    }
+    .ul-two{
+        width: 100% !important;
+        z-index: 1000000;
+        position: absolute;
+        left: 0% !important;
+        top: 0px;
+        border: 0;
+        background-color: #f6f6f6;
+        display: none !important;
+    } 
+
+
+    .home-menu{
+        position: absolute;
+        top: 0px !important;
+        left: 80px !important;
+        z-index: 10000000 !important;
+    }
+
+
+    .grandshop{
+        position: absolute;
+        background-color: #00f;
+        top: 40px !important;
+        left: 0px !important;
+        padding: 0px !important;
+    } 
+    .shop-menu{
+        width: 100% !important;
+    }
+
+
+    .super{
+        top: 45px !important;
+        left: -100px;
+        width: 100%;
+    }
+    .super a{
+        width: 100% !important;
+    }
+
+}
+@media only screen and (min-width: 600px) {
+    .ul-two{
+        width: 100% !important;
+        z-index: 1000000;
+        position: absolute;
+        left: 0% !important;
+        top: 0px;
+        border: 0;
+        background-color: #f6f6f6;
+        display: block !important;
+    }
+
+
+    .home-menu{
+        position: absolute;
+        top: 0px !important;
+        left: 80px !important;
+        z-index: 10000000 !important;
+    }
+
+
+    .grandshop{
+        position: absolute;
+        background-color: #00f;
+        top: 40px !important;
+        left: -0px !important;
+        padding: 0px;
+    } 
+    .shop-menu{
+        width: 100% !important;
+    }
+
+
+    .super{
+        top: 45px !important;
+        left: -100px;
+        width: 100%;
+    }
+    .super a{
+        width: 100% !important;
+    }
+
+}
+@media only screen and (min-width: 992px) {
+    .ul-two{
+        width: 400px;
+        z-index: 100;
+        position: absolute;
+        left: 100% !important;
+        top: -6px;
+        border: 0;
+        background-color: #f6f6f6;
+        display: none !important;
+    }
+
+    .home-menu{
+        position: absolute;
+        top: 195px !important;
+        left: 300px !important;
+        z-index: 100;
+        background-color: #f6f6f6;
+        width: 200px;
+        border: 1px solid #ddd;
+        border-radius: 2px;
+        text-align: center;
+        display: none;
+    }
+    
+    .grandshop{
+        position: absolute;
+        z-index: 100;
+        top: 195px !important;
+        left: 0% !important;
+        background-color: #f6f6f6;
+        width: 100% !important;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        text-align: center;
+        display: none;
+        padding: 20px 50px;
+    }
+    .grandshop.flex .shop-menu{
+        width: 24% !important;
+    }
+    .super{
+        position: absolute;
+        z-index: 100;
+        top: 195px !important;
+        left: 0%;
+        background-color: #f6f6f6;
+        width: 100%;
+        border: 1px solid #ddd;
+        display: none;
+        padding: 0px 50px;
+    }
+    .super .flex{
+        flex-flow: row wrap !important;
+    }
+    .section-bestsaller-product.flex{
+        flex-direction: row !important;
+    }
+    .super .flex a{
+        width: 170px !important;
+    }
+}
+.ul-two{
+    width: 400px;
+    z-index: 100;
+    position: absolute;
+    left: 100%;
+    top: -6px;
+    border: 0;
+    /* background:url(../images/men.jpg) no-repeat center/cover ; */
+    background-color: #f6f6f6;
+    /* height: 400px; */
+    display: none !important;
+}
+.cellfather:hover .cell{
+    display: block !important;
+}
+.computerfather:hover .computer{
+    display: block !important;
+}
+.tvfather:hover .tv{
+    display: block !important;
+}
+.smartfather:hover .smart{
+    display: block !important;
+}
+.ul-two .active {
+    color: #0070dc;
+}
+.ul-two li a:hover {
+    color: #018591;
+}
+
+
+.home-menu{
+    position: absolute;
+    top: 195px;
+    z-index: 100;
+    background-color: #f6f6f6;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    text-align: center;
+    display: none;
+}
+.homefather:hover .home-menu{
+    display: block;
+}
+.home-menu li{
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+}
+.home-menu li .active{
+    color: #0070dc;
+}
+.home-menu li a:hover{
+    color: #044b8d;
+}
+
+
+.grandshop{
+    position: absolute;
+    z-index: 100;
+    top: 195px;
+    left: 0;
+    background-color: #f6f6f6;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+    padding: 20px 50px;
+}
+.shop-menu{
+    background-color: #f6f6f6;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+.shopfather:hover .grandshop{
+    display: flex;
+}
+.shop-menu li{
+    margin: 20px 0 !important;
+}
+.shop-menu li .active{
+    color: #0070dc;
+}
+.shop-menu li a:hover{
+    color: #044b8d;
+}
+
+
+
+.super{
+    position: absolute;
+    z-index: 100;
+    top: 195px;
+    left: 0;
+    background-color: #f6f6f6;
+    width: 100%;
+    border: 1px solid #ddd;
+    display: none;
+    padding: 0px 50px;
+}
+.super a{
+    width: 170px;
+}
+
+.superfather:hover .super{
+    display: block ;
+}
+
+
+.opacity{
+    opacity: 0;
+    transition: all 2s;
+}
+
+.mya{
+    background-color: #f00 !important;
+    color: #fff;
+    padding: 3px 5px;
+    border-radius: 50%;
+}
